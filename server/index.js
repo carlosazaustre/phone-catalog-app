@@ -5,6 +5,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 
+const phoneController = require("./phones/controller");
+
 const PORT = process.env.PORT || 3000;
 const DB_URI = process.env.DB_URI || "mongodb://localhost:27017/phone-catalog";
 
@@ -17,13 +19,8 @@ app.use(express.json());
 app.get("/api/", (req, res) => {
   res.json({ status: "running", date: Date.now() });
 });
-app.get("/api/phones", (req, res) => {
-  res.json({ phones: [] });
-});
-app.get("/api/phone/:id", (req, res) => {
-  const { id } = req.params;
-  res.json({ phone: id });
-});
+app.get("/api/phones", phoneController.getPhones);
+app.get("/api/phone/:id", phoneController.getPhoneById);
 
 (async () => {
   try {
