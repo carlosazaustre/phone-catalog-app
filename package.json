@@ -1,0 +1,32 @@
+{
+  "name": "phone-catalog",
+  "version": "0.1.0",
+  "description": "MERN Stack Example APP",
+  "workspaces": [
+    "server",
+    "web"
+  ],
+  "engines": {
+    "npm": "7.7.6"
+  },
+  "scripts": {
+    "start": "npm run start --workspace=server",
+    "dev:server": "npm run dev --workspace=server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosazaustre/phone-catalog-app.git"
+  },
+  "keywords": [
+    "mern",
+    "node",
+    "react",
+    "javascript"
+  ],
+  "author": "Carlos Azaustre <cazaustre@gmail.com> (https://carlosazaustre.es/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlosazaustre/phone-catalog-app/issues"
+  },
+  "homepage": "https://github.com/carlosazaustre/phone-catalog-app#readme"
+}
