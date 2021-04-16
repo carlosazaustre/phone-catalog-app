@@ -1,0 +1,1 @@
+GET http://localhost:3000/api/phone/c5791365-c3d9-413d-9efc-8b9d445df04f

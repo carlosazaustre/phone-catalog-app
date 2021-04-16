@@ -1,0 +1,10 @@
+POST http://localhost:3000/api/phone
+Content-Type: application/json
+
+{
+	"image": "/iphone7.jpg",
+	"title": "iPhone 7",
+	"description": "The iPhone 7 boasts an advanced dual camera system which offers up to 2 hours longer battery life, and has lightning-fast performance power perfect for new generation, graphic-rich games. It's conveniently sized at 5.44\" x 2.64\" x 28\" and a lightweight 4.87 oz., with dynamic range stereo speakers, a vivid 4.7\" wide Color Retina HD",
+	"color": "black",
+	"price": "799"
+}
